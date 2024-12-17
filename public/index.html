@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./output.css">
+    <link rel="icon" href="./image/icon-website.jfif" type="image/x-icon">
+    <title>دنگه کؤردیی بهترین اهنگ های کوردی</title>
+    <!-- style css -->
+     <style>
+        /* --------navbar------- */
+        .menu-mobuil{
+            transform: translateX(-100%);
+            transition: transfrom .6s;
+        }
+        .menu-mobuil.show{
+            transform: translateX(0);
+        }
+         /* -----------bg header--------- */
+         .bg-header{
+            background-image: url('./image/Background-Black-For-Design-p999xc-png-tarhbox-ir.jpg');
+            background-repeat: no-repeat;
+        }
+     </style>
+
+</head>
+<body class="bg-gray-900">
+    <!-- ======================NAVBAR==================== -->
+     <nav class="bg-black shadow-md">
+        <div class="container mx-auto px-2 py-2">
+            <div class="flex justify-between items-center">
+                <div class="p-2">
+                    <h1 class="text-yellow-600 text-4xl font-bold">دنــگـــه  ڪؤردیــــی🤍</h1>
+                </div>
+                <!-- toggle -->
+                 <button class="mobuil-menu-button">
+                    <svg class="w-11 h-11 text-gray-950 bg-yellow-800 rounded-lg" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+                        <path d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                 </button>
+            </div>
+        </div>
+        <!-- list navbar -->
+        <div class="fixed space-y-0 h-full left-0 w-80 bg-black text-white font-bold menu-mobuil">
+            <ul class="space-y-4">
+                <li><a href="#musice" class="block bg-gray-900 text-white px-6 py-6 text-1xl font-bold hover:bg-gray-950 hover:text-yellow-300 navlink">موسیقی های محبوب</a></li>
+                <li><a href="#video-full" class="block bg-gray-900 text-white px-6 py-6 text-1xl font-bold hover:bg-gray-950 hover:text-yellow-300 navlink">ویدیو های محبوب</a></li>
+                <li><a href="#" class="block bg-gray-900 text-white px-6 py-6 text-1xl font-bold hover:bg-gray-950 hover:text-yellow-300 navlink">درباره ما</a></li>
+                <li><a href="#" class="block bg-gray-900 text-white px-6 py-6 text-1xl font-bold hover:bg-gray-950 hover:text-yellow-300 navlink">پشتیبانی</a></li>
+            </ul>
+            <img src="./image/navbar-img.jpg" class="w-full h-100 object-cover" alt="">      
+        </div>
+     </nav>
+    
+    <!-- ======================HEADER==================== -->
+    <div class="bg-header container mx-auto mt-0">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-2">
+            <div class="col-span-1 mt-12 text-center">
+                <h1 class="text-6xl font-bold text-yellow-600">دنــگـــه ڪؤردیــــی🤍</h1>
+                 <h3 class="text-4xl font-bold text-gray-500 mt-10 text-center">برترین کانال کوردی در ایران💙</h3>
+                <div class="mt-20">
+                        <a class="border border-yellow-300 text-3xl px-auto p-2 font-bold bg-gray-950 text-yellow-300 rounded-lg shadow-lg" href="https://rubika.ir/klip_kordi_rayghan/JCGJDAGIIDAEEHH">رفتن به دنــگـــه ڪؤردیــــی</a>
+                </div>
+            </div>
+            <div class="col-span-1 mt-9">
+                <img src="./image/slider.png" class="w-full h-50 object-cover" alt="slider">
+            </div>
+    </div>
+    </div>
+
+    <!-- ======================VIDEO==================== -->
+     <div class="container mx-auto" id="video-full">
+        <div class="text-center mt-4 mb-8 ">
+            <h1 class="text-bold text-yellow-500 text-5xl">🔷ویدیو های  <br>محبوب🔶</h1>
+            <hr class="mt-6">
+         </div>
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2">
+            <!-- ----video 1-- -->
+            <video class="w-full rounded-lg shadow-lg" controls>
+                <source src="./image/video/video_1.mp4" type="video/mp4">
+            </video>
+            <!-- ----video 2-- -->
+            <video class="w-full rounded-lg shadow-lg" controls>
+                <source src="./image/video/video_2.mp4" type="video/mp4">
+            </video>
+            <!-- ----video 3-- -->
+            <video class="w-full rounded-lg shadow-lg" controls>
+                <source src="./image/video/video_3.mp4" type="video/mp4">
+            </video>
+            <!-- ----video 4-- -->
+            <video class="w-full rounded-lg shadow-lg" controls>
+                <source src="./image/video/video_4.mp4" type="video/mp4">
+            </video>
+        </div>
+     </div>
+
+    <!-- ======================MUSICE==================== -->
+     <div class="container mx-auto" id="musice">
+        <div class="text-center mt-4 mb-8 ">
+            <h1 class="text-bold text-yellow-500 text-5xl">🎵موسیقی های <br> محبوب</h1>
+            <hr class="mt-6">
+         </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2">
+            <!-- musice 1 -->
+            <audio class="w-full" controls>
+                <source src="./image/musice/m-1.mp3" type="audio/mpeg">
+            </audio>
+            <!-- musice 2 -->
+            <audio class="w-full" controls>
+                <source src="./image/musice/m-2.mp3" type="audio/mpeg">
+            </audio>
+             <!-- musice 3 -->
+             <audio class="w-full" controls>
+                <source src="./image/musice/m-3.mp3" type="audio/mpeg">
+            </audio>
+             <!-- musice 4 -->
+             <audio class="w-full" controls>
+                <source src="./image/musice/m-4.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+     </div>
+
+     <!-- ======================MASEAGGE==================== -->
+      <div class="container mx-auto">
+        <div class="grid md:grid-cols-1 grid-cols-1 lg:grid-cols-1">
+            <div class="text-center mt-4 mb-8 ">
+                <h1 class="text-bold text-yellow-500 text-5xl">🟢نظرات🟤</h1>
+                <hr class="mt-6">
+             </div>
+             <!-- message -->
+             <div class="max-w-2xl mx-auto bg-gray-300 p-6 rounded-lg shadow-md">
+                <h2 class="text-xl font-bold mb-4">نظرات</h2>
+        
+                <form id="commentForm" class="mb-6">
+                    <input id="nameInput" class="w-full p-2 border border-gray-300 rounded-lg mb-2" type="text" placeholder="نام خود را وارد کنید..." required />
+                    <input id="imageInput" class="mb-2" type="file" accept="image/*" required />
+                    <textarea id="commentInput" class="w-full p-2 border border-gray-300 rounded-lg" rows="4" placeholder="نظر خود را اینجا بنویسید..." required></textarea>
+                    <button type="submit" class="mt-2 bg-blue-500 text-white px-4 py-2 rounded-lg">ارسال نظر</button>
+                </form>
+        
+                <div id="comments" class="space-y-4">
+                    <!-- نظرات در اینجا نمایش داده می‌شوند -->
+                </div>
+            </div>
+        </div>
+      </div>
+
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+     <!-- ============SCRIPT=========== -->
+      <script src="./js/main.js"></script>
+</body>
+</html>

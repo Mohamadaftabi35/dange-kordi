@@ -5,17 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./output.css">
     <link rel="icon" href="./image/icon-website.jfif" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.5.0/remixicon.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <title>دنگه کؤردیی بهترین اهنگ های کوردی</title>
     <!-- style css -->
      <style>
-        /* --------navbar------- */
-        .menu-mobuil{
-            transform: translateX(-100%);
-            transition: transfrom .6s;
-        }
-        .menu-mobuil.show{
-            transform: translateX(0);
-        }
          /* -----------bg header--------- */
          .bg-header{
             background-image: url('./image/Background-Black-For-Design-p999xc-png-tarhbox-ir.jpg');
@@ -26,35 +20,35 @@
 </head>
 <body class="bg-gray-900">
     <!-- ======================NAVBAR==================== -->
-     <nav class="bg-black shadow-md">
-        <div class="container mx-auto px-2 py-2">
-            <div class="flex justify-between items-center">
-                <div class="p-2">
-                    <h1 class="text-yellow-600 text-4xl font-bold">دنــگـــه  ڪؤردیــــی🤍</h1>
+        <nav class="bg-black shadow-md fixed top-0 left-0 w-full z-10">
+            <div class="container mx-auto px-2 py-2">
+                <div class="flex justify-between items-center">
+                    <div class="p-2">
+                        <h1 class="text-yellow-600 text-4xl font-bold">دنــگـــه  ڪؤردیــــی🤍</h1>
+                    </div>
+                    <!-- toggle -->
+                    <button class="mobile-menu-button">
+                        <svg class="w-11 h-11 text-gray-950 bg-yellow-800 rounded-lg" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
+                            <path d="M4 6h16M4 12h16m-7 6h7"></path>
+                        </svg>
+                    </button>
                 </div>
-                <!-- toggle -->
-                 <button class="mobuil-menu-button">
-                    <svg class="w-11 h-11 text-gray-950 bg-yellow-800 rounded-lg" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor">
-                        <path d="M4 6h16M4 12h16m-7 6h7"></path>
-                    </svg>
-                 </button>
             </div>
-        </div>
-        <!-- list navbar -->
-        <div class="fixed space-y-0 h-full left-0 w-80 bg-black text-white font-bold menu-mobuil">
-            <ul class="space-y-4">
-                <li><a href="#musice" class="block bg-gray-900 text-white px-6 py-6 text-1xl font-bold hover:bg-gray-950 hover:text-yellow-300 navlink">موسیقی های محبوب</a></li>
-                <li><a href="#video-full" class="block bg-gray-900 text-white px-6 py-6 text-1xl font-bold hover:bg-gray-950 hover:text-yellow-300 navlink">ویدیو های محبوب</a></li>
-                <li><a href="#" class="block bg-gray-900 text-white px-6 py-6 text-1xl font-bold hover:bg-gray-950 hover:text-yellow-300 navlink">درباره ما</a></li>
-                <li><a href="#" class="block bg-gray-900 text-white px-6 py-6 text-1xl font-bold hover:bg-gray-950 hover:text-yellow-300 navlink">پشتیبانی</a></li>
-            </ul>
-            <img src="./image/navbar-img.jpg" class="w-full h-100 object-cover" alt="">      
-        </div>
-     </nav>
+            <!-- list navbar -->
+            <div class="fixed space-y-0 h-full left-0 w-80 bg-black text-white font-bold mobile-menu hidden">
+                <ul class="space-y-4">
+                    <li><a href="#musice" class="block bg-gray-900 text-white px-6 py-6 text-1xl font-bold hover:bg-gray-950 hover:text-yellow-300 navlink">موسیقی های محبوب</a></li>
+                    <li><a href="#video-full" class="block bg-gray-900 text-white px-6 py-6 text-1xl font-bold hover:bg-gray-950 hover:text-yellow-300 navlink">ویدیو های محبوب</a></li>
+                    <li><a href="#" class="block bg-gray-900 text-white px-6 py-6 text-1xl font-bold hover:bg-gray-950 hover:text-yellow-300 navlink">درباره ما</a></li>
+                    <li><a href="#posht" class="block bg-gray-900 text-white px-6 py-6 text-1xl font-bold hover:bg-gray-950 hover:text-yellow-300 navlink">پشتیبانی</a></li>
+                </ul>
+                <img src="./image/navbar-img.jpg" class="w-full h-100 object-cover" alt="">      
+            </div>
+        </nav>
     
     <!-- ======================HEADER==================== -->
-    <div class="bg-header container mx-auto mt-0">
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-2">
+    <div class="bg-header container mx-auto mt-10">
+        <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-2">
             <div class="col-span-1 mt-12 text-center">
                 <h1 class="text-6xl font-bold text-yellow-600">دنــگـــه ڪؤردیــــی🤍</h1>
                  <h3 class="text-4xl font-bold text-gray-500 mt-10 text-center">برترین کانال کوردی در ایران💙</h3>
@@ -102,21 +96,48 @@
          </div>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2">
             <!-- musice 1 -->
+             <div class="bg-gray-700 p-4 py-6 shadow-lg rounded-lg mx-5">
+                <h2 class="text-white text-center mb-6 text-2xl">اهنگ🎶 Tu Duri</h2>
+                <p class="text-white text-center mb-1">
+                    ‌═══₪🌿 ♥️🌿 ₪═══
+                    </p>
             <audio class="w-full" controls>
-                <source src="./image/musice/m-1.mp3" type="audio/mpeg">
+                <source src="./image/musice/Tu Duri.m4a" type="audio/mpeg">
             </audio>
+            </div>
+
             <!-- musice 2 -->
+            <div class="bg-gray-700 p-4 py-6 shadow-lg rounded-lg mx-5">
+                <h2 class="text-white text-center mb-6 text-2xl">اهنگ🎶 Dılemın zagrose </h2>
+                <p class="text-white text-center mb-1">
+                    ‌═══₪🌿 ♥️🌿 ₪═══
+                    </p>
             <audio class="w-full" controls>
-                <source src="./image/musice/m-2.mp3" type="audio/mpeg">
+                <source src="./image/musice/Dılemın zagrose.mp3" type="audio/mpeg">
             </audio>
+            </div>
+
              <!-- musice 3 -->
-             <audio class="w-full" controls>
-                <source src="./image/musice/m-3.mp3" type="audio/mpeg">
+             <div class="bg-gray-700 p-4 py-6 shadow-lg rounded-lg mx-5">
+                <h2 class="text-white text-center mb-6 text-2xl">اهنگ🎶 Jehrmar _ Rindê</h2>
+                <p class="text-white text-center mb-1">
+                    ‌═══₪🌿 ♥️🌿 ₪═══
+                    </p>
+            <audio class="w-full" controls>
+                <source src="./image/musice/Jehrmar _ Rindê.mp3" type="audio/mpeg">
             </audio>
+            </div>
+
              <!-- musice 4 -->
-             <audio class="w-full" controls>
-                <source src="./image/musice/m-4.mp3" type="audio/mpeg">
+             <div class="bg-gray-700 p-4 py-6 shadow-lg rounded-lg mx-5">
+                <h2 class="text-white text-center mb-6 text-2xl">اهنگ🎶Hozan Diyar  </h2>
+                <p class="text-white text-center mb-1">
+                    ‌═══₪🌿 ♥️🌿 ₪═══
+                    </p>
+            <audio class="w-full" controls>
+                <source src="./image/musice/Hozan Diyar.mp3" type="audio/mpeg">
             </audio>
+            </div>
         </div>
      </div>
 
@@ -144,14 +165,39 @@
             </div>
         </div>
       </div>
+      
+     <!-- ======================footer==================== -->
+    <footer class="container mx-auto bg-gray-950 mt-10 text-center" id="posht">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+            <div class="text-center mt-3">
+                <h2 class="text-center text-2xl font-bold text-yellow-50">پشتیبانی</h2>
+                <hr class="mt-4">
+                <ul class="mt-5">
+                    <li class="mb-3"><a class="text-white text-bold text-2xl" href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#search/shrwanpwrshjay36%40gmail.com?compose=new">ایمیل : shrwanpwrshjay36@gmail.com</a></li>
+                </ul>
+            </div>
 
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
+            <div class="text-center mt-3">
+                <h2 class="text-center text-2xl font-bold text-yellow-50">شبکه های اجتماعی</h2>
+                <hr class="mt-4">
+
+                <ul class="mt-3">
+                    <li class="mb-3"><a class="text-white text-bold text-2xl" href="https://web.rubika.ir/#c=u0Di3se05fb0e386b921b99cbcdf3e52">روبینو  <i class="ri-pix-line text-2xl text-yellow-300"></i></a></li>
+                    <li class="mb-3"><a class="text-white text-bold text-2xl" href="https://www.instagram.com/shervan_pourshojayi/">اینستاگرام  <i class="ri-instagram-line text-2xl text-yellow-300"></i></a></li>
+                </ul>
+            </div>
+
+            <div class="text-center mt-3 mx-auto">
+                <h2 class="text-center text-2xl font-bold text-yellow-50">نماد اعتماد</h2>
+                <hr class="mt-4">
+                <img src="./image/نماد-اعتماد.png" class="w-50 h-50 object-cover" alt="نماد">
+            </div>
+        </div>
+
+        <span  class="mt-4 text-center">
+            <p class="text-white text-2xl"><i class="ri-copyleft-line">کپی رایت را رعایت کنید</i></p>
+        </span>
+    </footer>
      <!-- ============SCRIPT=========== -->
       <script src="./js/main.js"></script>
 </body>

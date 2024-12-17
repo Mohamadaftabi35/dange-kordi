@@ -1,12 +1,16 @@
 // ======================navbar toggle========================
-const btn = document.querySelector('button.mobuil-menu-button');
-const menu = document.querySelector('.menu-mobuil')
-
-
-btn.addEventListener('click' , () =>{
-    menu.classList.toggle('show');
-});
-
+const btn = document.querySelector(".mobile-menu-button");
+            const menu = document.querySelector(".mobile-menu");
+    
+            btn.addEventListener("click", () => {
+                menu.classList.toggle("hidden");
+            });
+    
+            window.addEventListener("scroll", () => {
+                if (!menu.classList.contains("hidden")) {
+                    menu.classList.add("hidden");
+                }
+            });
 //=============================navbar click heddin===================================
 const navlink = document.querySelectorAll('.navlink');
 
